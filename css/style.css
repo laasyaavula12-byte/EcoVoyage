@@ -1,0 +1,1569 @@
+/* ==========================================
+   EcoVoyage
+   Main Stylesheet
+   ========================================== */
+
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* ==========================================
+   ROOT VARIABLES
+   ========================================== */
+
+:root{
+
+    --primary:#2E7D32;
+    --primary-dark:#1B5E20;
+    --secondary:#F8F5F0;
+
+    --white:#ffffff;
+    --black:#263238;
+    --gray:#666666;
+    --light:#f8f9fa;
+
+    --shadow:0 15px 35px rgba(0,0,0,.08);
+    --radius:20px;
+    --transition:.35s ease;
+
+}
+
+/* ==========================================
+   RESET
+   ========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+    background:var(--secondary);
+    color:var(--black);
+    line-height:1.7;
+    overflow-x:hidden;
+
+}
+
+img{
+
+    width:100%;
+    display:block;
+
+}
+
+a{
+
+    text-decoration:none;
+
+}
+
+ul{
+
+    list-style:none;
+
+}
+
+section{
+
+    padding:100px 8%;
+
+}
+
+/* ==========================================
+   COMMON
+   ========================================== */
+
+.section-title,
+.section-heading{
+
+    text-align:center;
+    max-width:750px;
+    margin:0 auto 70px;
+
+}
+
+.section-title span,
+.section-heading span{
+
+    display:block;
+    color:var(--primary);
+    font-size:14px;
+    letter-spacing:3px;
+    font-weight:600;
+    text-transform:uppercase;
+    margin-bottom:12px;
+
+}
+
+.section-title h2,
+.section-heading h2{
+
+    font-size:48px;
+    margin-bottom:18px;
+    color:var(--primary);
+
+}
+
+.section-title p,
+.section-heading p{
+
+    font-size:18px;
+    color:var(--gray);
+    line-height:1.8;
+
+}
+
+/* ==========================================
+   NAVBAR
+   ========================================== */
+
+.navbar{
+
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:20px 8%;
+
+    background:rgba(255,255,255,.95);
+    backdrop-filter:blur(12px);
+
+    box-shadow:0 2px 20px rgba(0,0,0,.08);
+
+    z-index:1000;
+
+}
+
+.logo a{
+
+    font-size:30px;
+    font-weight:700;
+    color:var(--primary);
+
+}
+
+.nav-links{
+
+    display:flex;
+    gap:35px;
+
+}
+
+.nav-links a{
+
+    color:var(--black);
+    font-weight:500;
+    transition:var(--transition);
+
+}
+
+.nav-links a:hover,
+.nav-links a.active{
+
+    color:var(--primary);
+
+}
+
+.theme-btn{
+
+    width:48px;
+    height:48px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:var(--light);
+
+    cursor:pointer;
+
+    font-size:18px;
+
+    transition:var(--transition);
+
+}
+
+.theme-btn:hover{
+
+    background:var(--primary);
+    color:#fff;
+
+}
+
+.journey-btn{
+
+    padding:14px 28px;
+
+    border-radius:40px;
+
+    background:var(--primary);
+
+    color:#fff;
+
+    font-weight:600;
+
+    transition:var(--transition);
+
+}
+
+.journey-btn:hover{
+
+    background:var(--primary-dark);
+
+}
+
+/* ==========================================
+   BUTTONS
+   ========================================== */
+
+.primary-btn{
+
+    display:inline-block;
+
+    padding:16px 35px;
+
+    background:var(--primary);
+
+    color:#fff;
+
+    border-radius:50px;
+
+    font-weight:600;
+
+    transition:var(--transition);
+
+}
+
+.primary-btn:hover{
+
+    background:var(--primary-dark);
+
+    transform:translateY(-3px);
+
+}
+
+.secondary-btn{
+
+    display:inline-block;
+
+    padding:16px 35px;
+
+    border:2px solid #fff;
+
+    color:#fff;
+
+    border-radius:50px;
+
+    font-weight:600;
+
+    transition:var(--transition);
+
+}
+
+.secondary-btn:hover{
+
+    background:#fff;
+
+    color:var(--primary);
+
+}
+
+/* ==========================================
+   HERO
+   ========================================== */
+
+.hero,
+.about-hero{
+
+    position:relative;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    color:#fff;
+
+}
+
+.hero{
+
+    height:100vh;
+    padding-top:100px;
+
+    background:
+    linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+    url("../images/home/hero.jpg") center/cover no-repeat;
+
+}
+
+.about-hero{
+
+    height:100vh;
+
+    background:
+    linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+    url("../images/about/hero.jpg") center/cover no-repeat;
+
+}
+
+.hero-content{
+
+    max-width:800px;
+
+    padding:20px;
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+.hero-subtitle,
+.hero-tag,
+.hero-badge{
+
+    display:inline-block;
+
+    margin-bottom:20px;
+
+    padding:10px 24px;
+
+    border-radius:40px;
+
+    background:rgba(255,255,255,.15);
+
+    backdrop-filter:blur(10px);
+
+}
+
+.hero h1,
+.about-hero h1{
+
+    font-size:68px;
+
+    line-height:1.2;
+
+    margin-bottom:25px;
+
+}
+
+.hero p,
+.about-hero p{
+
+    font-size:20px;
+
+    line-height:1.8;
+
+    margin-bottom:35px;
+
+}
+
+.hero-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+.hero{
+    min-height: 100vh;
+    background: linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
+                url("../images/home/hero.jpg") center/cover no-repeat;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:#fff;
+}
+
+.hero-content{
+    max-width:800px;
+    padding:20px;
+}
+/* ==========================================
+   HOME - CATEGORIES
+   ========================================== */
+
+.categories{
+    background:#fff;
+}
+
+.category-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:30px;
+}
+
+.category-card{
+    background:#fff;
+    border-radius:var(--radius);
+    overflow:hidden;
+    box-shadow:var(--shadow);
+    transition:var(--transition);
+}
+
+.category-card:hover{
+    transform:translateY(-10px);
+}
+
+.category-card img{
+    height:240px;
+    object-fit:cover;
+}
+
+.category-content{
+    padding:25px;
+    text-align:center;
+}
+
+.category-content h3{
+    color:var(--primary);
+    font-size:24px;
+    margin-bottom:12px;
+}
+
+.category-content p{
+    color:var(--gray);
+}
+
+/* ==========================================
+   FEATURED DESTINATIONS
+   ========================================== */
+
+.featured-destinations,
+.destinations{
+    background:var(--light);
+}
+
+.destination-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:35px;
+}
+
+.destination-card{
+    background:#fff;
+    border-radius:22px;
+    overflow:hidden;
+    box-shadow:var(--shadow);
+    transition:var(--transition);
+}
+
+.destination-card:hover{
+    transform:translateY(-10px);
+}
+
+.destination-card img{
+    width:100%;
+    height:280px;
+    object-fit:cover;
+    transition:.4s;
+}
+
+.destination-card:hover img{
+    transform:scale(1.08);
+}
+
+.destination-info,
+.destination-content{
+    padding:28px;
+}
+
+.destination-info h3,
+.destination-content h3{
+    font-size:28px;
+    color:var(--primary);
+    margin-bottom:15px;
+}
+
+.destination-info p,
+.destination-content p{
+    color:var(--gray);
+    margin-bottom:22px;
+}
+
+.card-btn{
+    color:var(--primary);
+    font-weight:600;
+    transition:var(--transition);
+}
+
+.card-btn:hover{
+    color:var(--primary-dark);
+}
+
+/* ==========================================
+   CULTURE SPOTLIGHT
+   ========================================== */
+
+.culture-spotlight{
+    background:#fff;
+}
+
+.spotlight-container{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    align-items:center;
+}
+
+.spotlight-image img{
+    height:600px;
+    object-fit:cover;
+    border-radius:25px;
+    box-shadow:var(--shadow);
+}
+
+.spotlight-content h2{
+    font-size:46px;
+    margin:20px 0;
+}
+
+.spotlight-content p{
+    color:var(--gray);
+    margin-bottom:20px;
+}
+
+.spotlight-tag{
+    display:inline-block;
+    background:var(--primary);
+    color:#fff;
+    padding:10px 22px;
+    border-radius:30px;
+    font-size:14px;
+}
+
+.spotlight-features{
+    margin:30px 0;
+}
+
+.spotlight-features div{
+    margin-bottom:20px;
+}
+
+.spotlight-features h4{
+    color:var(--primary);
+    margin-bottom:6px;
+}
+
+/* ==========================================
+   FESTIVALS
+   ========================================== */
+
+.festival-section,
+.festivals{
+    background:var(--light);
+}
+
+.festival-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.festival-card{
+    position:relative;
+    overflow:hidden;
+    border-radius:20px;
+    box-shadow:var(--shadow);
+}
+
+.festival-card img{
+    width:100%;
+    height:260px;
+    object-fit:cover;
+    transition:.4s;
+}
+
+.festival-card:hover img{
+    transform:scale(1.08);
+}
+
+.festival-info,
+.festival-overlay{
+    position:absolute;
+    left:0;
+    bottom:0;
+    width:100%;
+    padding:20px;
+    background:linear-gradient(transparent,rgba(0,0,0,.8));
+    color:#fff;
+}
+
+/* ==========================================
+   FOOD
+   ========================================== */
+
+.food-section,
+.food{
+    background:#fff;
+}
+
+.food-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.food-card{
+    background:#fff;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:var(--shadow);
+    transition:var(--transition);
+    text-align:center;
+}
+
+.food-card:hover{
+    transform:translateY(-10px);
+}
+
+.food-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.food-info{
+    padding:25px;
+}
+
+.food-card h3{
+    margin:18px 0 8px;
+    color:var(--primary);
+}
+
+.food-card p,
+.food-info p{
+    color:var(--gray);
+}
+/* ==========================================
+   WHY CHOOSE ECOVOYAGE
+========================================== */
+
+.why-section,
+.why-ecovoyage{
+    background:var(--light);
+}
+
+.why-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:30px;
+}
+
+.why-card{
+    background:#fff;
+    padding:40px 30px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:var(--shadow);
+    transition:var(--transition);
+}
+
+.why-card:hover{
+    transform:translateY(-10px);
+}
+
+.why-icon{
+    font-size:48px;
+    margin-bottom:20px;
+}
+
+.why-card h3{
+    color:var(--primary);
+    margin-bottom:15px;
+    font-size:24px;
+}
+
+.why-card p{
+    color:var(--gray);
+    line-height:1.8;
+}
+
+/* ==========================================
+   STATISTICS
+========================================== */
+
+.stats-section{
+    background:#fff;
+}
+
+.stats-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:30px;
+}
+
+.stat-card{
+    background:#fff;
+    text-align:center;
+    padding:45px 30px;
+    border-radius:20px;
+    box-shadow:var(--shadow);
+    transition:var(--transition);
+}
+
+.stat-card:hover{
+    transform:translateY(-10px);
+}
+
+.stat-card h2{
+    font-size:56px;
+    color:var(--primary);
+    margin-bottom:10px;
+}
+
+.stat-card p{
+    color:var(--gray);
+}
+
+/* ==========================================
+   TESTIMONIALS
+========================================== */
+
+.testimonial-section,
+.testimonials{
+    background:var(--light);
+}
+
+.testimonial-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.testimonial-card{
+    background:#fff;
+    padding:35px;
+    border-radius:20px;
+    box-shadow:var(--shadow);
+    transition:var(--transition);
+}
+
+.testimonial-card:hover{
+    transform:translateY(-10px);
+}
+
+.testimonial-card p{
+    color:var(--gray);
+    line-height:1.8;
+    margin-bottom:20px;
+    font-style:italic;
+}
+
+.testimonial-card h4{
+    color:var(--primary);
+}
+
+.testimonial-card span{
+    color:#888;
+}
+
+/* ==========================================
+   NEWSLETTER
+========================================== */
+
+.newsletter{
+    background:linear-gradient(135deg,var(--primary),var(--primary-dark));
+    color:#fff;
+    text-align:center;
+}
+
+.newsletter-content,
+.newsletter-container{
+    max-width:750px;
+    margin:auto;
+}
+
+.newsletter h2{
+    font-size:46px;
+    margin-bottom:20px;
+}
+
+.newsletter p{
+    font-size:18px;
+    margin-bottom:35px;
+    line-height:1.8;
+}
+
+.newsletter form,
+.newsletter-form{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.newsletter input{
+    width:350px;
+    padding:16px;
+    border:none;
+    border-radius:50px;
+    outline:none;
+    font-size:16px;
+}
+
+.newsletter button{
+    padding:16px 35px;
+    border:none;
+    border-radius:50px;
+    background:#fff;
+    color:var(--primary);
+    font-weight:600;
+    cursor:pointer;
+    transition:var(--transition);
+}
+
+.newsletter button:hover{
+    transform:translateY(-3px);
+}
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+footer{
+    background:#111;
+    color:#fff;
+    padding:80px 8% 30px;
+}
+
+.footer-content{
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr;
+    gap:40px;
+}
+
+.footer-content h3,
+.footer-content h4{
+    margin-bottom:20px;
+}
+
+.footer-content p{
+    color:#bbb;
+    line-height:1.8;
+}
+
+.footer-content ul{
+    padding:0;
+}
+
+.footer-content li{
+    margin-bottom:12px;
+}
+
+.footer-content a{
+    color:#bbb;
+    transition:var(--transition);
+}
+
+.footer-content a:hover{
+    color:#fff;
+}
+
+.footer-bottom{
+    margin-top:40px;
+    padding-top:20px;
+    border-top:1px solid #333;
+    text-align:center;
+    color:#999;
+}
+/* ==========================================
+   ABOUT PAGE
+========================================== */
+
+.about-story{
+    background:#fff;
+}
+
+.story-container{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    align-items:center;
+}
+
+.story-image img{
+    width:100%;
+    height:550px;
+    object-fit:cover;
+    border-radius:25px;
+    box-shadow:var(--shadow);
+}
+
+.story-content h2{
+    font-size:46px;
+    margin:20px 0;
+    color:var(--primary);
+}
+
+.story-content p{
+    color:var(--gray);
+    line-height:1.9;
+    margin-bottom:20px;
+}
+
+.section-label{
+    color:var(--primary);
+    font-weight:600;
+    letter-spacing:3px;
+    text-transform:uppercase;
+}
+
+/* ==========================================
+   MISSION & VISION
+========================================== */
+
+.mission-vision{
+    background:var(--light);
+}
+
+.mission-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:35px;
+}
+
+.mission-box{
+    background:#fff;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:var(--shadow);
+    transition:var(--transition);
+}
+
+.mission-box:hover{
+    transform:translateY(-10px);
+}
+
+.mission-box img{
+    width:100%;
+    height:260px;
+    object-fit:cover;
+}
+
+.mission-text{
+    padding:30px;
+}
+
+.mission-text h3{
+    color:var(--primary);
+    margin-bottom:15px;
+}
+
+.mission-text p{
+    color:var(--gray);
+}
+
+/* ==========================================
+   FEATURES
+========================================== */
+
+.features-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:30px;
+}
+
+.feature-card{
+    background:#fff;
+    padding:35px;
+    border-radius:20px;
+    box-shadow:var(--shadow);
+    transition:var(--transition);
+}
+
+.feature-card:hover{
+    transform:translateY(-10px);
+}
+
+.feature-card h3{
+    color:var(--primary);
+    margin-bottom:15px;
+}
+
+/* ==========================================
+   EXPERIENCE
+========================================== */
+
+.experience{
+    background:#fff;
+}
+
+.experience-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:30px;
+}
+
+.experience-box{
+    background:#fff;
+    text-align:center;
+    padding:40px 25px;
+    border-radius:20px;
+    box-shadow:var(--shadow);
+    transition:var(--transition);
+}
+
+.experience-box:hover{
+    transform:translateY(-10px);
+}
+
+.experience-box h2{
+    color:var(--primary);
+    font-size:52px;
+    margin-bottom:10px;
+}
+
+.experience-box p{
+    color:var(--gray);
+}
+
+/* ==========================================
+   REGIONAL OFFICES
+========================================== */
+
+.regional{
+    background:var(--light);
+}
+
+.regional-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:30px;
+}
+
+.regional-card{
+    background:#fff;
+    padding:35px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:var(--shadow);
+    transition:var(--transition);
+}
+
+.regional-card:hover{
+    transform:translateY(-10px);
+}
+
+.regional-card h3{
+    color:var(--primary);
+    margin-bottom:10px;
+}
+
+/* ================= CONTACT ================= */
+
+.contact-section{
+    background:#f8f9fa;
+}
+
+.contact-container{
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:40px;
+    align-items:start;
+}
+
+.contact-form{
+    background:#fff;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+}
+
+.contact-form input,
+.contact-form textarea{
+    width:100%;
+    padding:16px;
+    margin-bottom:20px;
+    border:1px solid #ddd;
+    border-radius:12px;
+    font-size:16px;
+    font-family:'Poppins',sans-serif;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+    outline:none;
+    border-color:#2E7D32;
+    box-shadow:0 0 10px rgba(46,125,50,.2);
+}
+
+.contact-form button{
+    width:100%;
+}
+
+.contact-info{
+    background:#2E7D32;
+    color:#fff;
+    padding:40px;
+    border-radius:20px;
+}
+
+.contact-info h3{
+    margin-bottom:20px;
+}
+
+.contact-info p{
+    margin:15px 0;
+    line-height:1.7;
+}
+
+.interest-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:12px;
+    margin:20px 0;
+}
+
+.interest-grid label{
+    background:#f4f4f4;
+    padding:12px;
+    border-radius:10px;
+    cursor:pointer;
+}
+/* ==========================================
+   GALLERY
+========================================== */
+
+.gallery-section{
+    background:#fff;
+}
+
+.gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.gallery-item{
+    position:relative;
+    overflow:hidden;
+    border-radius:20px;
+    box-shadow:var(--shadow);
+}
+
+.gallery-item img{
+    width:100%;
+    height:320px;
+    object-fit:cover;
+    transition:.4s;
+    cursor:pointer;
+}
+
+.gallery-item:hover img{
+    transform:scale(1.08);
+}
+
+.gallery-overlay{
+    position:absolute;
+    left:0;
+    bottom:0;
+    width:100%;
+    padding:20px;
+    background:linear-gradient(transparent,rgba(0,0,0,.85));
+    color:#fff;
+}
+
+.quote-section{
+    background:var(--light);
+    text-align:center;
+}
+
+.quote-section blockquote{
+    font-size:34px;
+    font-weight:600;
+    color:var(--primary);
+    margin-bottom:20px;
+}
+
+.gallery-feature{
+    background:#fff;
+}
+
+/* ==========================================
+   WORLD MAP
+========================================== */
+
+.world-map{
+    background:#fff;
+}
+
+.map-container{
+    position:relative;
+    max-width:1100px;
+    margin:auto;
+}
+
+.map-image{
+    border-radius:20px;
+    box-shadow:var(--shadow);
+}
+
+.map-pin{
+    position:absolute;
+    font-size:30px;
+    transition:.3s;
+}
+
+.map-pin:hover{
+    transform:scale(1.3);
+}
+
+.japan{top:33%;left:84%;}
+.korea{top:36%;left:81%;}
+.china{top:40%;left:73%;}
+.india{top:52%;left:66%;}
+.swiss{top:34%;left:49%;}
+.bali{top:66%;left:79%;}
+
+/* ==========================================
+   COMPARISON TABLE
+========================================== */
+
+.comparison{
+    background:var(--light);
+}
+
+.comparison-table{
+    overflow-x:auto;
+}
+
+.comparison table{
+    width:100%;
+    border-collapse:collapse;
+    background:#fff;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:var(--shadow);
+}
+
+.comparison th{
+    background:var(--primary);
+    color:#fff;
+    padding:18px;
+}
+
+.comparison td{
+    padding:16px;
+    border-bottom:1px solid #eee;
+    text-align:center;
+}
+
+/* ==========================================
+   TRAVEL FACTS
+========================================== */
+
+.travel-facts,
+.did-you-know{
+    background:#fff;
+    text-align:center;
+}
+
+.fact-card{
+    max-width:800px;
+    margin:auto;
+    padding:45px;
+    background:#fff;
+    border-radius:20px;
+    box-shadow:var(--shadow);
+}
+
+.fact-card h3{
+    color:var(--primary);
+    margin-bottom:20px;
+}
+
+/* ==========================================
+   LIGHTBOX
+========================================== */
+
+#lightbox{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.92);
+    display:none;
+    justify-content:center;
+    align-items:center;
+    z-index:9999;
+}
+
+#lightbox img{
+    max-width:90%;
+    max-height:85%;
+    border-radius:15px;
+}
+
+#closeLightbox{
+    position:absolute;
+    top:30px;
+    right:40px;
+    color:#fff;
+    font-size:45px;
+    cursor:pointer;
+}
+
+/* ==========================================
+   LOADER
+========================================== */
+
+#loader{
+    position:fixed;
+    inset:0;
+    background:#fff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    z-index:99999;
+    transition:.5s;
+}
+
+.loader-hidden{
+    opacity:0;
+    visibility:hidden;
+}
+
+.loader-content{
+    text-align:center;
+}
+
+.loader-content h1{
+    color:var(--primary);
+    margin-bottom:10px;
+}
+
+.loader-spinner{
+    width:55px;
+    height:55px;
+    margin:20px auto;
+    border:5px solid #ddd;
+    border-top:5px solid var(--primary);
+    border-radius:50%;
+    animation:spin 1s linear infinite;
+}
+
+@keyframes spin{
+    to{
+        transform:rotate(360deg);
+    }
+}
+
+/* ==========================================
+   ANIMATIONS
+========================================== */
+
+.fade-up{
+    opacity:0;
+    transform:translateY(40px);
+    transition:all .8s ease;
+}
+
+.fade-up.show{
+    opacity:1;
+    transform:translateY(0);
+}
+
+/* ==========================================
+   STICKY NAVBAR
+========================================== */
+
+.sticky{
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+}
+
+/* ==========================================
+   BACK TO TOP
+========================================== */
+
+#topBtn{
+    position:fixed;
+    right:25px;
+    bottom:25px;
+    width:50px;
+    height:50px;
+    border:none;
+    border-radius:50%;
+    background:var(--primary);
+    color:#fff;
+    cursor:pointer;
+    display:none;
+    z-index:999;
+}
+
+#topBtn:hover{
+    background:var(--primary-dark);
+}
+
+/* ==========================================
+   DARK MODE
+========================================== */
+
+body.dark-mode{
+    background:#121212;
+    color:#f5f5f5;
+}
+
+body.dark-mode .navbar,
+body.dark-mode .category-card,
+body.dark-mode .destination-card,
+body.dark-mode .festival-card,
+body.dark-mode .food-card,
+body.dark-mode .why-card,
+body.dark-mode .testimonial-card,
+body.dark-mode .mission-box,
+body.dark-mode .feature-card,
+body.dark-mode .experience-box,
+body.dark-mode .regional-card,
+body.dark-mode .contact-form,
+body.dark-mode .fact-card{
+    background:#1f1f1f;
+    color:#fff;
+}
+
+body.dark-mode section{
+    background:#121212;
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4{
+    color:#fff;
+}
+
+body.dark-mode p,
+body.dark-mode li{
+    color:#d5d5d5;
+}
+
+body.dark-mode .footer-content p{
+    color:#bbb;
+}
+/* ===== Discover Search ===== */
+
+.search-container{
+    display: flex;
+    justify-content: center;
+    margin: 40px auto;
+}
+
+.search-box{
+    width: 600px;
+    max-width: 90%;
+    padding: 16px 20px;
+    font-size: 18px;
+    border: 2px solid #2e7d32;
+    border-radius: 50px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.search-box:focus{
+    border-color: #1b5e20;
+    box-shadow: 0 0 10px rgba(46,125,50,0.3);
+}
+/* ================= GALLERY ================= */
+
+.gallery-section{
+    padding:80px 8%;
+}
+
+.gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
+}
+
+.gallery-item{
+    position:relative;
+    overflow:hidden;
+    border-radius:18px;
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+}
+
+.gallery-image{
+    width:100%;
+    height:280px;
+    object-fit:cover;
+    display:block;
+    transition:.5s;
+}
+
+.gallery-item:hover .gallery-image{
+    transform:scale(1.08);
+}
+
+.gallery-overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.45);
+    color:#fff;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-end;
+    padding:20px;
+    opacity:0;
+    transition:.4s;
+}
+
+.gallery-item:hover .gallery-overlay{
+    opacity:1;
+}
+.primary-btn,
+.secondary-btn,
+.journey-btn{
+    transition:.3s ease;
+}
+
+.primary-btn:hover,
+.secondary-btn:hover,
+.journey-btn:hover{
+    transform:translateY(-3px);
+}
+.destination-card img,
+.gallery-image,
+.food-card img,
+.festival-card img{
+    width:100%;
+    object-fit:cover;
+}
+.destination-card,
+.category-card,
+.food-card,
+.festival-card,
+.gallery-item{
+    transition:0.3s ease;
+}
+
+.destination-card:hover,
+.category-card:hover,
+.food-card:hover,
+.festival-card:hover,
+.gallery-item:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+}
+html{
+    scroll-behavior:smooth;
+}
