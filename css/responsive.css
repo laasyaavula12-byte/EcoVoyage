@@ -41,33 +41,17 @@ section{
 }
 
 }
-/* ==========================================
-   MOBILE (768px)
-========================================== */
-
 @media (max-width:768px){
 
-section{
-    padding:60px 5%;
-}
-
-/* Navbar */
-
 .navbar{
-    flex-direction:column;
-    align-items:center;
-    gap:15px;
-    padding:15px 5%;
+    padding:12px 5%;
 }
 
 .logo a{
-    font-size:24px;
+    font-size:32px;
 }
 
 .nav-links{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
     gap:12px;
 }
 
@@ -76,139 +60,57 @@ section{
 }
 
 .theme-btn{
-    width:40px;
-    height:40px;
+    width:42px;
+    height:42px;
 }
-
-.journey-btn{
-    width:100%;
-    text-align:center;
-    padding:12px 20px;
-}
-
-/* Hero */
 
 .hero,
-.about-hero{
-    min-height:80vh;
-    padding-top:120px;
+.about-hero,
+.discover-hero{
+    min-height:70vh;
 }
 
 .hero h1,
-.about-hero h1{
-    font-size:34px;
+.about-hero h1,
+.discover-hero h1{
+    font-size:42px;
+    line-height:1.2;
 }
 
-.hero p,
-.about-hero p{
-    font-size:16px;
-}
-
-.hero-buttons{
-    flex-direction:column;
-    align-items:center;
-    gap:15px;
+.hero p{
+    font-size:18px;
+    max-width:90%;
+    margin:auto;
 }
 
 .primary-btn,
-.secondary-btn{
-    width:100%;
-    max-width:280px;
-    text-align:center;
-}
-
-/* Headings */
-
-.section-title h2,
-.section-heading h2{
-    font-size:30px;
-}
-
-.section-title p,
-.section-heading p{
+.secondary-btn,
+.journey-btn{
+    padding:14px 30px;
     font-size:16px;
+    border-radius:40px;
 }
 
-/* All grids */
-
-.category-grid,
-.destination-grid,
-.food-grid,
-.festival-grid,
-.gallery-grid,
-.why-grid,
-.stats-grid,
-.testimonial-grid,
-.features-grid,
-.experience-grid,
-.regional-grid,
-.footer-content,
-.mission-grid,
-.interest-grid{
-    grid-template-columns:1fr;
+.hero-buttons{
+    gap:15px;
 }
 
-/* Spotlight */
-
-.spotlight-container,
-.story-container,
-.contact-container{
-    grid-template-columns:1fr;
+.section-title h2{
+    font-size:34px;
 }
 
-.spotlight-image img,
-.story-image img{
-    height:300px;
+.section-title p{
+    font-size:17px;
 }
 
-/* Cards */
-
-.category-card img,
 .destination-card img,
-.food-card img,
-.festival-card img,
-.gallery-item img{
+.category-card img{
     height:220px;
 }
 
-.contact-form,
-.contact-info,
-.why-card,
-.stat-card,
-.testimonial-card,
-.feature-card,
-.experience-box,
-.regional-card{
-    padding:25px;
-}
-
-/* Newsletter */
-
-.newsletter h2{
-    font-size:28px;
-}
-
-.newsletter-form{
-    flex-direction:column;
-}
-
-.newsletter input{
-    width:100%;
-}
-
-/* Footer */
-
-.footer-content{
-    text-align:center;
-    gap:30px;
-}
-
-.quote-section blockquote{
-    font-size:24px;
-}
-
-.search-box{
-    width:100%;
+.destination-info,
+.category-content{
+    padding:22px;
 }
 }
 /* ==========================
