@@ -211,3 +211,60 @@ section{
     width:100%;
 }
 }
+/* ==========================
+   SMALL PHONES
+========================== */
+
+@media (max-width:480px){
+
+html{
+    font-size:16px;
+}
+
+.navbar{
+    padding:12px;
+}
+
+.logo a{
+    font-size:20px;
+}
+
+.nav-links{
+    gap:10px;
+}
+
+.nav-links a{
+    font-size:14px;
+}
+
+.hero h1,
+.about-hero h1{
+    font-size:28px;
+}
+
+.hero p,
+.about-hero p{
+    font-size:15px;
+}
+
+.section-title h2,
+.section-heading h2{
+    font-size:26px;
+}
+
+.primary-btn,
+.secondary-btn,
+.journey-btn{
+    width:100%;
+    max-width:250px;
+    padding:12px;
+    font-size:14px;
+}
+
+.destination-card img,
+.category-card img,
+.gallery-item img{
+    height:200px;
+}
+
+}
