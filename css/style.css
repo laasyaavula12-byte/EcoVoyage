@@ -1567,3 +1567,6 @@ body.dark-mode .footer-content p{
 html{
     scroll-behavior:smooth;
 }
+.menu-toggle{
+    display: none;
+}
