@@ -1570,3 +1570,51 @@ html{
 .menu-toggle{
     display: none;
 }
+/* ================= MOBILE NAVBAR ================= */
+
+.menu-toggle{
+    display:none;
+    font-size:32px;
+    cursor:pointer;
+}
+
+@media (max-width:768px){
+
+    .navbar{
+        padding:12px 18px;
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+    }
+
+    .logo a{
+        font-size:28px;
+    }
+
+    .menu-toggle{
+        display:block;
+    }
+
+    .nav-links{
+        display:none;
+        position:absolute;
+        top:75px;
+        left:0;
+        width:100%;
+        background:#fff;
+        flex-direction:column;
+        text-align:center;
+        padding:20px 0;
+        box-shadow:0 10px 20px rgba(0,0,0,.1);
+        gap:20px;
+    }
+
+    .nav-links.active{
+        display:flex;
+    }
+
+    .theme-btn,
+    .journey-btn{
+        display:none;
+    }
+}
