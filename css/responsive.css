@@ -203,6 +203,20 @@ section{
     display:none;
 }
 }
+.menu-toggle{
+    display: block;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.nav-links{
+    display: none;
+}
+
+.nav-links.active{
+    display: flex;
+    flex-direction: column;
+}
 /* ==========================
    SMALL PHONES
 ========================== */
