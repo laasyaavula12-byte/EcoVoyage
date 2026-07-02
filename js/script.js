@@ -406,4 +406,15 @@ fact.textContent=travelFacts[currentFact];
 
 }
 console.log("JavaScript is working!");
+/* ==========================
+MOBILE MENU
+========================== */
 
+const menuToggle = document.getElementById("mobile-menu");
+const navLinks = document.getElementById("nav-links");
+
+if (menuToggle && navLinks) {
+    menuToggle.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+    });
+}
