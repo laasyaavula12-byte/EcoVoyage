@@ -418,3 +418,4 @@ if (menuToggle && navLinks) {
         navLinks.classList.toggle("active");
     });
 }
+console.log("Menu JS Loaded");
