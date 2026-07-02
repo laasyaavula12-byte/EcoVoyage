@@ -158,6 +158,51 @@ section{
     display:none;
 }
 }
+@media (max-width:768px){
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 20px;
+    position:relative;
+}
+
+.logo a{
+    font-size:28px;
+}
+
+.menu-toggle{
+    display:block;
+    font-size:28px;
+    cursor:pointer;
+}
+
+.nav-links{
+    display:none;
+    flex-direction:column;
+    position:absolute;
+    top:70px;
+    left:0;
+    width:100%;
+    background:#fff;
+    padding:20px 0;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.nav-links.active{
+    display:flex;
+}
+
+.nav-links li{
+    margin:12px 0;
+}
+
+.theme-btn{
+    display:none;
+}
+}
 /* ==========================
    SMALL PHONES
 ========================== */
